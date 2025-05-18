@@ -1,0 +1,48 @@
+# Finite Element Method Experiments (1D Beam Elements)
+
+This project is a personal sandbox for experimenting with the Finite Element Method (FEM) in C++.  
+The focus is on **1D problems** using **Euler–Bernoulli beam elements**, with the goal of gradually exploring:
+
+- Basic FEM assembly and solving
+- Boundary conditions and system solving (Gaussian elimination)
+- Beam element behavior: displacements and rotations
+- Mesh generation and JSON output
+- Modular design for future support of more complex elements (2D trusses, 3D solids, etc.)
+
+## Features
+
+- ✅ Beam element stiffness matrix calculation using Euler–Bernoulli theory
+- ✅ Automatic stiffness matrix assembly
+- ✅ Basic boundary condition handling
+- ✅ Simple linear solver
+- ✅ Output of displacements and rotations
+- ✅ Mesh generator for 1D beams that exports node/element data to JSON
+
+## Files
+
+- `main.cpp`: FEM driver for beam analysis
+- `fem_utils.cpp/.h`: Modular functions for stiffness assembly, boundary conditions, solving, and output
+- `beam_mesh_generator.cpp`: CLI utility that creates a beam mesh and writes it to `beam_mesh.json`
+- `input.txt`: Input file for the main FEM simulation
+- `output.txt`: Output file with computed nodal results
+- `.gitignore`: Ignores build files, executables, and temporary data
+
+## Usage
+
+1. **Build the mesh generator and FEM solver** using `make` or `CMake`.
+2. Run `beam_mesh_generator` to generate a mesh.
+3. Edit `input.txt` to provide loads and boundary conditions.
+4. Run the main program to compute displacements and rotations.
+
+## Dependencies
+
+- [nlohmann/json](https://github.com/nlohmann/json): Used for JSON mesh output.
+
+## Why?
+
+I'm learning FEM by building it from scratch — no libraries, just math and code.  
+This helps me understand element-level mechanics, matrix assembly, and solver logic, before eventually tackling 2D and 3D problems.
+
+---
+
+Feel free to fork, use, or contribute — this is a learning project!
