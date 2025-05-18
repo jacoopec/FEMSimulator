@@ -1,0 +1,14 @@
+1D bar axial element
+K, representing the global stiffness matrix in the FEM equation:
+the overall FEM structure remains:
+[𝐾]{𝑢}={𝐹}
+
+K: The name of the matrix — it holds stiffness coefficients between all pairs of nodes.
+
+In FEM, we build a global stiffness matrix that combines the contributions of each element. 
+It tells us how displacement at one node affects forces at all nodes.
+
+to  use different elements: 
+How you compute local K_e
+How many DOFs per node you handle
+The shape of your global K

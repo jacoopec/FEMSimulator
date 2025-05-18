@@ -1,0 +1,34 @@
+# Compiled object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+fem_program
+beam_mesh_generator
+
+# Build directories
+/build/
+CMakeFiles/
+cmake-build-*/
+
+# CMake generated files
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Visual Studio Code
+.vscode/
+
+# JSON mesh/output
+beam_mesh.json
+output.txt
+
+# Mac OS / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# nlohmann/json single-header file (if added manually)
+json.hpp

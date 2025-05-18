@@ -1,0 +1,11 @@
+# length num_elements EI
+10.0 2 50000.0
+
+# Nodal loads: [vertical_force, moment] for each node
+0.0 0.0   # Node 0
+0.0 0.0   # Node 1
+0.0 -100.0  # Node 2 (moment applied at the right end)
+
+# Boundary conditions: [dof_index, value]
+0 0.0     # Vertical displacement at Node 0 (u0 = 0)
+1 0.0     # Rotation at Node 0 (theta0 = 0)

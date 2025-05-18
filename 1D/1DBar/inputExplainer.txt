@@ -1,0 +1,8 @@
+# Length of bar, number of elements, area, Young's modulus (N/m^2)
+10.0 2 1.0 200000000.0
+
+# Nodal forces (N): one per node (3 nodes for 2 elements)
+0.0 0.0 1000.0
+
+# Boundary conditions: node index and displacement
+0 0.0
